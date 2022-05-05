@@ -1,0 +1,32 @@
+@import 'variables';
+@import 'reset';
+@import 'wrapper';
+@import 'header';
+@import 'buttons';
+@import 'projects';
+@import 'skills';
+@import 'footer';
+@import 'scroll';
+@import 'dark-theme';
+@import 'breakpoints';
+
+// Base
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background: var(--body-color);
+  color: var(--text-color);
+  transition: 3s; //For animation darkmode
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+  gap: 2.4rem;
+}

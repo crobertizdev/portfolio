@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carlos Robertiz | Portafolio</title>
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/img/favicon.png" />
+    <!-- Fuentes Popins 400 500 600 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Iconos -->
+    <script
+      src="https://kit.fontawesome.com/4bd224e08c.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Normalize -->
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <!-- THEME BUTTON -->
+    <i class="fa fa-moon change-theme" id="theme-button"></i>
+
+    <!-- HEADER -->
+    <header class="profile wrapper">
+      <div class="profile__container grid">
+        <div class="profile__data">
+          <div class="profile__border">
+            <div class="profile__perfil">
+              <img
+                src="./assets/img/perfil.png"
+                alt="Perfil de Carlos Robertiz"
+              />
+            </div>
+          </div>
+
+          <h2 class="profile__name">Carlos Robertiz</h2>
+          <h3 class="profile__profession">Desarrollador Frontend</h3>
+          <ul class="profile__social">
+            <a
+              href="https://www.instagram.com/crobertizdev/"
+              target="_blank"
+              class="profile__social-link"
+              ><i class="fa fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/crobertizdev/"
+              target="_blank"
+              class="profile__social-link"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+            <a
+              href="https://github.com/crobertizdev"
+              target="_blank"
+              class="profile__social-link"
+              ><i class="fa fa-github"></i
+            ></a>
+          </ul>
+        </div>
+
+        <div class="profile__info grid">
+          <div class="profile__info-group">
+            <h3 class="profile__info-number">1</h3>
+            <p class="profile__info-description">
+              Años de <br />
+              trabajo
+            </p>
+          </div>
+          <div class="profile__info-group">
+            <h3 class="profile__info-number">+5</h3>
+            <p class="profile__info-description">
+              Proyectos <br />
+              completados
+            </p>
+          </div>
+          <div class="profile__info-group">
+            <h3 class="profile__info-number">0</h3>
+            <p class="profile__info-description">
+              Clientes <br />
+              satisfechos
+            </p>
+          </div>
+        </div>
+
+        <div class="profile__buttons">
+          <a href="./assets/cv.pdf" download="Carlos-Robertiz-CV" class="button"
+            >Descargar CV&nbsp;<i class="fa fa-download"></i
+          ></a>
+          <div class="profile__buttons-small">
+            <a
+              href="https://api.whatsapp.com/send?phone=584144802813&text=Hola,%20mas%20información!"
+              target="_blank"
+              class="button button-small button__gray"
+              ><i class="fa fa-whatsapp"></i
+            ></a>
+            <a
+              href="https://t.me/crobertizdev"
+              target="_blank"
+              class="button button-small button__gray"
+              ><i class="fa fa-telegram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="filters wrapper">
+        <!-- FILTER TABS -->
+        <ul class="filters__content">
+          <button
+            class="filters__button filter-tab-active"
+            data-target="#projects"
+          >
+            Proyectos
+          </button>
+          <button class="filters__button" data-target="#skills">
+            Habilidades
+          </button>
+        </ul>
+
+        <div class="filters__sections">
+          <!-- PROYECTOS -->
+          <div
+            class="projects__content grid filters__active"
+            data-content
+            id="projects"
+          >
+            <article class="projects__card">
+              <img
+                src="./assets/img/project1.png"
+                class="projects__img"
+                alt=""
+              />
+
+              <div class="projects__modal">
+                <div>
+                  <span class="projects__subtitle">Web</span>
+                  <h3 class="projects__title">Balanza de mundos</h3>
+                  <a
+                    href="https://crobertizdev.github.io/balanza-de-mundos/"
+                    class="projects__button button button__small"
+                    target="_blank"
+                    ><i class="fa fa-link"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="projects__card">
+              <img
+                src="./assets/img/project2.png"
+                class="projects__img"
+                alt=""
+              />
+
+              <div class="projects__modal">
+                <div>
+                  <span class="projects__subtitle">Web</span>
+                  <h3 class="projects__title">Portafolio Dinámico</h3>
+                  <a
+                    href="https://crobertizdev.github.io/portfolio-dinamico/"
+                    class="projects__button button button__small"
+                    target="_blank"
+                    ><i class="fa fa-link"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="projects__card">
+              <img
+                src="./assets/img/project3.png"
+                class="projects__img"
+                alt=""
+              />
+
+              <div class="projects__modal">
+                <div>
+                  <span class="projects__subtitle">Web - UI</span>
+                  <h3 class="projects__title">Portafolio de Jaume</h3>
+                  <a
+                    href="https://crobertizdev.github.io/portafolio-jaume/"
+                    class="projects__button button button__small"
+                    target="_blank"
+                    ><i class="fa fa-link"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="projects__card">
+              <img
+                src="./assets/img/project4.png"
+                class="projects__img"
+                alt=""
+              />
+
+              <div class="projects__modal">
+                <div>
+                  <span class="projects__subtitle">Web</span>
+                  <h3 class="projects__title">Mi Portafolio</h3>
+                  <a
+                    href="#"
+                    class="projects__button button button__small"
+                    target="_blank"
+                    ><i class="fa fa-link"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- HABILIDADES -->
+          <div class="skills__content grid" data-content id="skills">
+            <div class="skills__areas">
+              <h3 class="skills__title">Frontend Developer</h3>
+
+              <div class="skills__box">
+                <div class="skills__group">
+                  <div class="skills__data">
+                    <i class="fa fa-check"></i>
+                    <div>
+                      <h3 class="skills__name">HTML</h3>
+                      <span class="skills__level">Avanzado</span>
+                    </div>
+                  </div>
+                  <div class="skills__data">
+                    <i class="fa fa-check"></i>
+                    <div>
+                      <h3 class="skills__name">CSS</h3>
+                      <span class="skills__level">Intermedio</span>
+                    </div>
+                  </div>
+                  <div class="skills__data">
+                    <i class="fa fa-check"></i>
+                    <div>
+                      <h3 class="skills__name">JavaScript</h3>
+                      <span class="skills__level">Básico</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skills__group">
+                  <div class="skills__data">
+                    <i class="fa fa-check"></i>
+                    <div>
+                      <h3 class="skills__name">Figma</h3>
+                      <span class="skills__level">Intermedio</span>
+                    </div>
+                  </div>
+                  <div class="skills__data">
+                    <i class="fa fa-check"></i>
+                    <div>
+                      <h3 class="skills__name">Bootstrap</h3>
+                      <span class="skills__level">Intermedio</span>
+                    </div>
+                  </div>
+                  <div class="skills__data">
+                    <i class="fa fa-check"></i>
+                    <div>
+                      <h3 class="skills__name">Git</h3>
+                      <span class="skills__level">Básico</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills__areas">
+              <h3 class="skills__title">Otras Tegnologías</h3>
+
+              <div class="skills__box">
+                <div class="skills__group">
+                  <div class="skills__data">
+                    <i class="fa fa-check"></i>
+                    <div>
+                      <h3 class="skills__name">Wordpress</h3>
+                      <span class="skills__level">Intermedio</span>
+                    </div>
+                  </div>
+                  <div class="skills__data">
+                    <i class="fa fa-check"></i>
+                    <div>
+                      <h3 class="skills__name">Arduino</h3>
+                      <span class="skills__level">Básico</span>
+                    </div>
+                  </div>
+                  <div class="skills__data">
+                    <i class="fa fa-check"></i>
+                    <div>
+                      <h3 class="skills__name">Excel</h3>
+                      <span class="skills__level">Básico</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- <div class="skills__group">
+                  <div class="skills__data">
+                    <i class="fa fa-check"></i>
+                    <div>
+                      <h3 class="skills__name">Python</h3>
+                      <span class="skills__level">Básico</span>
+                    </div>
+                  </div>
+                  <div class="skills__data">
+                    <i class="fa fa-check"></i>
+                    <div>
+                      <h3 class="skills__name">Nodejs</h3>
+                      <span class="skills__level">Intermedio</span>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer wrapper">
+      <span class="footer__copy">Hecho por Carlos Robertiz</span>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

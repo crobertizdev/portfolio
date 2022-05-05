@@ -1,0 +1,105 @@
+.profile {
+  position: relative;
+  padding-top: 5.6rem;
+
+  .profile__container {
+    row-gap: 3.2rem;
+
+    .profile__data {
+      display: grid;
+      text-align: center;
+
+      .profile__border {
+        border: 3.5px solid var(--first-color);
+        justify-self: center;
+        width: 115px;
+        height: 115px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        margin-bottom: 1.2rem;
+
+        .profile__perfil {
+          width: 100px;
+          height: 100px;
+          background: linear-gradient(
+            180deg,
+            hsla(var(--hue), var(--sat), var(--lig), 1) 0%,
+            hsla(var(--hue), var(--sat), var(--lig), 0.2) 100%
+          );
+          border-radius: 50%;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      .profile__name {
+        font-size: var(--h2-font-size);
+      }
+
+      .profile__profession {
+        font-size: var(--smaller-font-size);
+        font-weight: 500;
+        color: var(--text-color);
+        margin-bottom: 1.6rem;
+      }
+
+      .profile__social {
+        display: flex;
+        justify-content: center;
+        column-gap: 1.2rem;
+
+        .profile__social-link {
+          font-size: 2rem;
+          color: var(--title-color);
+          transition: 0.3s;
+          &:hover {
+            color: var(--first-color);
+          }
+        }
+      }
+    }
+
+    .profile__info {
+      grid-template-columns: repeat(3, max-content);
+      justify-content: center;
+      column-gap: 2.4rem;
+
+      .profile__info-group {
+        text-align: center;
+
+        .profile__info-number {
+          font-size: var(--normal-font-size);
+          margin-bottom: 0.4rem;
+        }
+
+        .profile__info-description {
+          font-size: var(--smaller-font-size);
+          font-weight: 500;
+        }
+      }
+    }
+
+    .profile__buttons,
+    .profile__buttons-small {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .profile__buttons {
+      flex-direction: column;
+      row-gap: 1.6rem;
+
+      .profile__buttons-small {
+        column-gap: 0.4rem;
+      }
+    }
+  }
+}

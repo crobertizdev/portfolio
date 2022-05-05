@@ -1,0 +1,55 @@
+.skills__content {
+  row-gap: 5.6rem;
+
+  .skills__title {
+    font-size: var(--h3-font-size);
+    text-align: center;
+    margin-bottom: 2.4rem;
+  }
+
+  .skills__box {
+    display: flex;
+    justify-content: center;
+    column-gap: 1.6rem;
+
+    .skills__group {
+      display: grid;
+      align-content: flex-start;
+      row-gap: 1.6rem;
+
+      .skills__data {
+        display: flex;
+        column-gap: 0.8rem;
+
+        i {
+          font-size: 1.6rem;
+          color: var(--first-color);
+        }
+
+        .skills__name {
+          font-size: var(--normal-font-size);
+          font-weight: 500;
+          line-height: 18px;
+        }
+
+        .skills__level {
+          font-size: var(--smaller-font-size);
+        }
+      }
+    }
+  }
+}
+
+//Hide and show skills and projects
+.filters [data-content] {
+  display: none;
+}
+
+.filters__active[data-content] {
+  display: grid;
+}
+
+//Activate button filter
+.filter-tab-active {
+  background-color: var(--body-color);
+}
