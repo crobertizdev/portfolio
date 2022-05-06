@@ -383,6 +383,7 @@ ul {
   color: var(--title-color);
   cursor: pointer;
   transition: 0.3s;
+  z-index: 50;
 }
 .change-theme:hover {
   color: var(--first-color);
